@@ -1,9 +1,8 @@
 # Made By Code with Frazix
 ### This script will make your termux look better. Enjoy! ! 
-![logo](logo.png)
 #### Installing
-
-1. chmod +x \*.\*
+1. apt update && git clone https://github.com/Frazix12/termuc-styling
+1. cd termux-styling && chmod +x *
 2. ./setup.sh or sh setup.sh to install styling. 
 
 
