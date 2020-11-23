@@ -27,6 +27,3 @@
 
 #### Uninstalling
 1. Run the script again to uninstall styling.
-
-*Special Thanks to **xenoCoder01**
-for testing, modifying and helping to make this script work*
