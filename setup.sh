@@ -103,52 +103,7 @@ clear
 #Script starts
 #cd $HOME
 #cd termuxstyling
-echo Script made by:- Code with Frazix
-#Uninstall
-if [ -e ".user.cfg" ]
-then
-	uname=$(sed '1q;d' .user.cfg)
-	istate=$(sed '2q;d' .user.cfg)
-	if [ "$istate" -eq "1" ]
-	then
-		printf "Uninstall? [Y/N]: "
-		read ink1
-		case $ink1 in
-			[yY][eE][sS]|[yY])
-		rm .user.cfg;
-		echo $uname > .user.cfg
-		echo 0 >> .user.cfg
-		cd
-		cd /$HOME
-		cd ..
-		cd usr/etc
-		echo "command_not_found_handle() {
-        	/data/data/com.termux/files/usr/libexec/termux/command-not-found "$1"
-		} 
-		PS1='\$ '" > bash.bashrc & echo "" & spinner -t && clear
-		echo "Welcome to Termux!
-		Wiki:            https://wiki.termux.com
-		Community forum: https://termux.com/community
-		IRC channel:     #termux on freenode
-		Gitter chat:     https://gitter.im/termux/termux
-		Mailing list:    termux+subscribe@groups.io
-
-		Search packages:   pkg search <query>
-		Install a package: pkg install <package>
-		Upgrade packages:  pkg upgrade
-		Learn more:        pkg help" > motd
-		cd
-		cd /$HOME
-		figlet Frazix
-		echo Now Your Termux is back to Original
-		echo "Uninstalled Succesfully"
-		exit 0
-		;;
-			*)
-		;;
-		esac
-	fi
-fi
+echo "Script made by:- Code with Frazix"
 #Assigns Username
 if [ ! -e ".user.cfg" ] 
 then
