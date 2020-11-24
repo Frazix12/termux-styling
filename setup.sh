@@ -10,6 +10,7 @@ cd ../usr/share
 git clone https://github.com/xero/figlet-fonts
 mv figlet-fonts/* figlet && rm -rf figlet-fonts
 cd $HOME
+clear
 # Setting up commands
 getCPos() (
 	local opt=$*
