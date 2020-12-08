@@ -6,6 +6,7 @@ pdir=$(pwd)
 apt install figlet toilet -y > /dev/null 2>&1
 pkg install git ruby ncurses-utils -y > /dev/null 2>&1
 gem install lolcat
+cd
 cd ../usr/share
 git clone https://github.com/xero/figlet-fonts
 mv figlet-fonts/* figlet && rm -rf figlet-fonts
